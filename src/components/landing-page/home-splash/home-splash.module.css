@@ -1,0 +1,132 @@
+/* Home Container */
+.homeContainerWrapper {
+    background-color: #005b9f;
+}
+
+.homeContainer {
+    /*text-align: center;*/
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+.homeContainer .homeWrapper {
+    padding: 3em 10px 3em;
+}
+
+.homeContainer .homeWrapper .wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.homeContainer .homeWrapper #project_title {
+    font-size: 300%;
+    letter-spacing: -0.08em;
+    line-height: 1em;
+    margin-bottom: 80px;
+}
+
+.homeContainer .homeWrapper #project_tagline {
+    font-size: 200%;
+    letter-spacing: -0.04em;
+    line-height: 1em;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.companyLogoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Debugging layout */
+/*.companyLogo,*/
+/*.rocket,*/
+/*.motto*/
+/*{ border: 1px solid black; }*/
+
+.companyLogo {
+    height: 250px;
+    width: 250px;
+    display: block;
+}
+
+.rocket {
+    /*width: 100%;*/
+    max-width: 70%;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
+.rocket > svg {
+    height: 100px;
+}
+
+.motto {
+    font-size: 250%;
+    line-height: 1em;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    text-align: center;
+}
+
+.motto h2,
+.motto small
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.motto h2 { align-items: flex-end; margin-bottom: 0; }
+
+.motto small {
+    font-weight: normal;
+    font-size: 50%;
+    line-height: 1.4em;
+    margin: 0 0 1.3em;
+}
+
+@media only screen and (min-width: 480px) {
+    .inner {
+        padding-top: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .companyLogoWrapper { width: 50% }
+    .rocket { width: 50% }
+    .motto { width: 100% }
+}
+
+@media only screen and (min-width: 1024px) {
+    .inner {
+        flex-direction: unset;
+        flex-wrap: unset;
+    }
+
+    .companyLogoWrapper { width: 30%; order: 1; align-items: unset; justify-content: right }
+    .rocket { width: 30%; order: 3; }
+    .motto { width: 40%; order: 2; justify-content: left; }
+}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 1500px) {
+    .wrapper {
+        max-width: 1400px;
+    }
+}
+/* End of Home Container */

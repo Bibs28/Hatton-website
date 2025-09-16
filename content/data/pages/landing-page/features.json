@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Design",
+    "image": "feature-design.svg",
+    "imageAlt": "Design",
+    "text": "We are able to translate business requirements into high level designs which could then be used within a RFP process to ask Cloud Vendors to bid for work"
+  },
+  {
+    "title": "Honest Broker",
+    "image": "feature-honest-broker.svg",
+    "imageAlt": "Honest Broker",
+    "text": "We are able to provide honest cloud service provider GAP analysis, offer your company the \"industry insider\" during vendor selection"
+  },
+  {
+    "title": "Deliver",
+    "image": "feature-deliver.svg",
+    "imageAlt": "Deliver",
+    "text": "We are able to commit a team of technical engineers delivering specific projects. Within the delivery, we will provide resources and build documentation"
+  },
+  {
+    "title": "Post Installation Audit",
+    "image": "feature-post-installation-audit.svg",
+    "imageAlt": "Post Installation Audit",
+    "text": "We are able to review your existing cloud delivery, assist in improving it and provide consultants to help support your platform"
+  },
+  {
+    "title": "Operations",
+    "image": "feature-operations.svg",
+    "imageAlt": "Operations",
+    "text": "We are able to hand over documentation to support your team"
+  }
+]

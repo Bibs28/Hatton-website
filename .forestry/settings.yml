@@ -1,0 +1,65 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: static/admin
+webhook_url: 
+sections:
+- type: heading
+  label: Config
+- type: document
+  path: content/data/siteMetadata.json
+  label: Site Metadata
+- type: document
+  path: content/data/people.json
+  label: People
+- type: document
+  path: content/data/certifications.json
+  label: Certifications
+- type: document
+  path: content/data/headerLinks.json
+  label: Header Links
+- type: document
+  path: content/data/footerLinks.json
+  label: Footer Links
+- type: heading
+  label: Home Page
+- type: document
+  path: content/data/technologies.json
+  label: Technologies
+- type: document
+  path: content/data/pages/landing-page/sections.json
+  label: Sections
+- type: document
+  path: content/data/pages/landing-page/features.json
+  label: Features
+- type: heading
+  label: Content
+- type: directory
+  path: content/posts
+  label: Posts
+  create: documents
+  match: "**/*"
+  new_doc_ext: mdx
+  templates:
+  - blog
+- type: directory
+  path: src/pages
+  label: Pages
+  create: documents
+  match: "**/*"
+  new_doc_ext: mdx
+upload_dir: content/assets
+public_path: "../assets"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - GATSBY_WEBPACK_PUBLICPATH=/
+  - PATH_PREFIX=/
+  preview_output_directory: public
+  install_dependencies_command: yarn install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: yarn run forestry:preview

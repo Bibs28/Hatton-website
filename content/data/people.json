@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Paulo Braga",
+    "image": "paulo-braga.jpg",
+    "imageAlt": "Paulo Braga",
+    "imageLink": "profile/paulo-braga",
+    "position": "Senior Network & Security Engineer",
+    "role": "Consultants"
+  },
+  {
+    "name": "Sidney Maung",
+    "imageAlt": "Sidney Maung",
+    "imageLink": "profile/sidney-maung",
+    "position": "Senior Network & Security Engineer",
+    "role": "Consultants"
+  },
+  {
+    "name": "Ogueri De Jonge",
+    "imageAlt": "Ogueri De Jonge",
+    "imageLink": "profile/ogueri-de-jonge",
+    "position": "Presales Technical Consultant",
+    "role": "Sales"
+  }
+]

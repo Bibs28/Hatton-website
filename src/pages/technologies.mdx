@@ -1,0 +1,20 @@
+import SEO from "../components/seo"
+import Technologies from "../components/landing-page/technologies/technologies"
+import { Link } from "gatsby"
+
+<SEO title="Technologies we are experienced with"/>
+
+<div className="showcaseSection">
+    <div className="prose">
+        <h1>Knowledge</h1>
+        <p>Our consultants have extensive experience with the following:</p>
+    </div>
+    <hr />
+        <Technologies showAll={true} />
+    <hr />
+    <p>Would you like to work with us?</p>
+    <Link to="contact-us" className="button">
+        Get in touch
+    </Link>
+    <br /><br />
+</div>
